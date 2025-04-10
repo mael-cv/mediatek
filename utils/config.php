@@ -15,11 +15,11 @@ if (file_exists($envFile)) {
 }
 
 // Configuration de la base de données
-define('DB_HOST', getenv('DB_HOST') ?: 'mysql-litmaaa.alwaysdata.net');
-define('DB_NAME', getenv('DB_NAME') ?: 'litmaaa_mediatek');
-define('DB_USER', getenv('DB_USER') ?: 'litmaaa_mediatek');
-define('DB_PASS', getenv('DB_PASS') ?: 'Jb84Ldhd43JD9s');
-define('ENVIRONMENT', getenv('ENVIRONMENT') ?: 'development');
+define('DB_HOST', getenv('DB_HOST') ?: '');
+define('DB_NAME', getenv('DB_NAME') ?: '');
+define('DB_USER', getenv('DB_USER') ?: '');
+define('DB_PASS', getenv('DB_PASS') ?: '');
+define('ENVIRONMENT', getenv('ENVIRONMENT') ?: 'production');
 
 // Fonction de connexion à la base de données
 function getDbConnection() {
